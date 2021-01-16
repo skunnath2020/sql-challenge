@@ -10,7 +10,7 @@ CREATE TABLE "Department" (
     "dept_no" varchar   NOT NULL,
     "dept_name" varchar   NOT NULL,
     CONSTRAINT "pk_Department" PRIMARY KEY (
-        "dept_no","dept_name"
+        "dept_no"
      )
 );
 
@@ -29,12 +29,18 @@ CREATE TABLE "Employees" (
 
 CREATE TABLE "Dept_Emp" (
     "emp_no" INT   NOT NULL,
-    "dept_no" VARCHAR   NOT NULL
+    "dept_no" VARCHAR   NOT NULL,
+    CONSTRAINT "pk_Dept_Emp" PRIMARY KEY (
+        "emp_no","dept_no"
+     )
 );
 
 CREATE TABLE "Dept_manager" (
     "dept_no" VARCHAR   NOT NULL,
-    "emp_no" INT   NOT NULL
+    "emp_no" INT   NOT NULL,
+    CONSTRAINT "pk_Dept_manager" PRIMARY KEY (
+        "dept_no","emp_no"
+     )
 );
 
 CREATE TABLE "Salaries" (
