@@ -45,7 +45,10 @@ CREATE TABLE "Dept_manager" (
 
 CREATE TABLE "Salaries" (
     "emp_no" INT   NOT NULL,
-    "salary" MONEY   NOT NULL
+    "salary" MONEY   NOT NULL,
+    CONSTRAINT "pk_Salaries" PRIMARY KEY (
+        "emp_no"
+     )
 );
 
 CREATE TABLE "Titles" (

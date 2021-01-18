@@ -1,4 +1,4 @@
---1.List the details of each employee: employee number, last name, first name, sex, and salary
+﻿--1.List the details of each employee: employee number, last name, first name, sex, and salary
 select em."emp_no" as "Employee Number",
 	"last_name", "first_name",
 	"sex" , s."salary"
